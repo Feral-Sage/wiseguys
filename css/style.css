@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+
+.loader {
+	position: fixed;
+	z-index:100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader img {
+	width: 100%;
+	height: auto;
+}
+
+.content {
+	display: none;
+}
+
+.loaded .loader {
+	display: none;
+}
+
+.loaded .content {
+	display: block;
+}
